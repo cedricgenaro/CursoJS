@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(244, 247, 250);
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(70, 130, 180); 
+}
+ 
+h2 {
+  color: rgb(95, 158, 160);
+} 
+  
+p {
+  color: rgb(120, 132, 140);
+}
+
+img {
+  width: 175px;
+  height: auto;
+  display:inline-block;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin: 8px 0;
+  background-color: rgb(74, 144, 226);
+  color: rgb(255, 255, 255);
+  border: 0;
+  cursor: pointer;
+  display:inline-block;
+}
+  
+

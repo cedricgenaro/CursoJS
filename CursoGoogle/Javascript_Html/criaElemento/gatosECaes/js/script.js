@@ -1,0 +1,15 @@
+let titulo = document.createElement('h1');
+titulo.textContent = 'Fofuras';
+let catImg = document.createElement('img');
+catImg.src = './img/greyTabby.jpg';
+let catButton = document.createElement('button');
+catButton.textContent = 'Clique Aqui!';
+let dogImg = document.createElement('img');
+dogImg.src = './img/couchDog.jpg';
+let dogButton = document.createElement('button');
+dogButton.textContent = 'Clique Aqui!';
+document.body.appendChild(titulo);
+document.body.appendChild(catImg);
+document.body.appendChild(catButton);
+document.body.appendChild(dogImg);
+document.body.appendChild(dogButton);

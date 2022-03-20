@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poder das flores</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <script>
+        var corpo = d3.select('body').append('svg')
+                                    .attr('width', 500)
+                                    .attr('height', 500);
+        
+        var petala1 = corpo.append('circle')
+                            .attr('r', 25)
+                            .attr('fill', 'red' )
+                            .attr('cx', 215)
+                            .attr('cy', 220);
+        var petala2 = corpo.append('circle')
+                            .attr('r', 25)
+                            .attr('fill', 'red' )
+                            .attr('cx', 250)
+                            .attr('cy', 200);
+        var petala3 = corpo.append('circle')
+                            .attr('r', 25)
+                            .attr('fill', 'red' )
+                            .attr('cx', 252)
+                            .attr('cy', 280);
+        var petala4 = corpo.append('circle')
+                            .attr('r', 25)
+                            .attr('fill', 'red' )
+                            .attr('cx', 285)
+                            .attr('cy', 220);
+        var petala5 = corpo.append('circle')
+                            .attr('r', 25)
+                            .attr('fill', 'red' )
+                            .attr('cx', 215)
+                            .attr('cy', 260);
+        var petala3 = corpo.append('circle')
+                            .attr('r', 25)
+                            .attr('fill', 'red' )
+                            .attr('cx', 285)
+                            .attr('cy', 255);
+        var center = corpo.append('circle')
+                            .transition('11115s')
+                            .attr('r', 25)
+                            .attr('fill', 'yellow' )
+                            .attr('cx', 250)
+                            .attr('cy', 240);
+        var caule = corpo.append('rect')
+                            .attr('width', 13)
+                            .attr('height', 80)
+                            .attr('fill', 'green')
+                            .attr('x', 245)
+                            .attr('y', 305);
+        var solo = corpo.append('rect')
+                            .attr('width', 250)
+                            .attr('height', 80)
+                            .attr('fill','#008000')
+                            .attr('x', 80)
+                            .attr('y', 350);
+            
+
+    </script>
+</body>
+</html>

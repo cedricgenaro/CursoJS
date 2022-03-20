@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplesmente formas</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <script>
+        var svg = d3.select('body').append('svg');
+        var rect = svg.append('rect')
+                    .attr('height', 105)
+                    .attr('width', 105)
+                    .attr('fill', 'blue');
+        var circle = svg.append('circle').attr('r', 50).attr('cx', 50).attr('cy',50)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    
+    <script>
+        var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", 500)
+                        .attr("height", 500);
+        var red = svg.append("circle")
+                            .attr("cx", 100)
+                            .attr("cy", 150)
+                            .attr("r", 50)
+                            .attr("fill", "red");
+        var yellow = svg.append('circle')
+                            .attr('cx', 100)
+                            .attr('cy', 250)
+                            .attr('r', 50)
+                            .attr('fill', "yellow");
+        var green = svg.append('circle')
+                            .attr('cx', 100)
+                            .attr('cy', 350)
+                            .attr('r', 50)
+                            .attr('fill', "green");
+    </script>
+    
+</body>
+</html>

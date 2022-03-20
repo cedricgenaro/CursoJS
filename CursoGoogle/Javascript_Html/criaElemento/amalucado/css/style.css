@@ -1,0 +1,31 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(244, 247, 250);
+    text-align: center;
+  }
+  
+  img {
+    width: 175px;
+    height: auto;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    display: grid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin: 8px 48px;
+    background-color: rgb(74, 144, 226);
+    color: rgb(255, 255, 255);
+    border: 0;
+    cursor: pointer;
+    display: grid;
+    margin: auto;
+  }
+  
+
