@@ -1,22 +1,14 @@
 var svg = d3.select('body').append('svg').attr('width', 500).attr('height', 500);
+var circle = svg.append('circle');
+var square = svg.append('rect');
 
-var olhoesquerdo = svg.append('circle')
-                        .attr('r', 80)
-                        .attr('cx', 150)
-                        .attr('cy', 160)
-                        .attr('fill', 'white');
-var olhodireito = svg.append('circle')
-                        .attr('r', 80)
-                        .attr('cx', 315)
-                        .attr('cy', 160)
-                        .attr('fill', 'white');
-var pupilaesquerda = svg.append('circle')
-                        .attr('r', 30)
-                        .attr('cx', 108)
-                        .attr('cy', 160)
-                        .attr('fill', 'black');
-var pupiladireita = svg.append('circle')   
-                        .attr('r', 30)
-                        .attr('cx', 275)
-                        .attr('cy', 160)
-                        .attr('fill', 'black');
+function drawCircle(color){
+    circle.attr('r', 15).attr('cx', 15).attr('cy', 15).attr('fill', color);
+}
+function drawSquare(color){
+    square.attr('width', 30).attr('height', 30).attr('x', 30).attr('y', 0).attr('fill', color);
+}
+
+drawCircle('blue');
+drawSquare('red');
+
