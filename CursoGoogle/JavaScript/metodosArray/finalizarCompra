@@ -1,0 +1,19 @@
+let compras = [
+    {item: 'Arroz', price: 18.99},
+    {item: 'Feijão', price: 7.98},
+    {item: 'Biscoito', price: 1.99},
+    {item: 'Macarrão', price: 3.49},
+];
+
+let prices = compras.map((item) => {
+    return item.price;
+})
+
+let total = prices.reduce((total, price) => {
+    return total + price;
+});
+
+console.log('Total: R$' + total.toFixed(2));
+let frete = total > 50 ? 0 : 10;
+console.log('Frete: R$' + frete.toFixed(2));
+console.log(`Total Geral: R$ ${(frete + total).toFixed(2)}`);
