@@ -23,7 +23,7 @@ function acender() {
 
 function apagar() {
   bt1.attr('y', 65);
-  lamp.attr('fill', 'black');
+  lamp.transition().duration(1000).attr('fill', 'black');
 }
 
 bt1.on('click', acender);
