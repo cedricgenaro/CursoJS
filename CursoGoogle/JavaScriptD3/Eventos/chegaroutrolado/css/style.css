@@ -1,0 +1,17 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #00324b;
+
+}
+
+svg {
+    margin-left: 25px;
+}
+
+svg >circle {
+    margin-left: 325px;
+}
