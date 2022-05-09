@@ -4,20 +4,20 @@ import {addIngredient} from './funcoes.js';
 let ingredients = [
     {
       name: 'potatoes',
-      kilos: 4,
+      kilos: 4
     },
     {
       name: 'carrots',
-      kilos: 2,
+      kilos: 2
     },
     {
       name: 'onions',
-      kilos: 1,
+      kilos: 1
     },
     {
       name: 'chickens',
-      kilos: 'two',
-    },
+      kilos: 2
+    }
   ];
   
 let leeks = {
@@ -28,19 +28,20 @@ let leeks = {
 function printTotalWeight() {
   let total = 0;
   for (let i of ingredients){
-    total += i.kilos;
+      total += i.kilos;
+     
   }
   console.log('Total ingredient weight: ' + total + 'kilos');
 };
 
 function printIngredient(ingredient) {
-  print(ingredient.kilos + ' kilos ' + ingredient.name);
+  console.log(ingredient.kilos + ' kilos ' + ingredient.name);
 };
 function prepareRecipeCards() {
   try {
     addIngredient(leeks, ingredients);
     printTotalWeight();
-    ingredients.forEach(printIngredient());
+    ingredients.forEach(printIngredient);
   }catch(e) {
     console.log(e);
   }
