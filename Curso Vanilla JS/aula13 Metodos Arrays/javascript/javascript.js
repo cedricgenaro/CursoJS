@@ -1,5 +1,5 @@
 let arr1 = [1, 2, 3, 4, 5];
-let arr2 = ['s', 't', 8];
+let arr2 = ['s', 't', 's'];
 
 //Concatenação
 
@@ -79,6 +79,35 @@ let someX = arrFinal.some(
 );
 
 //Reverse
-let reverseX = arrFinal.reverse();
+//let reverseX = arrFinal.reverse();
+
+//Reduce
+let reduceX = arrFinal.reduceRight(
+    function verifyElements(v1, v2, ind, arr) {
+        return v1 + v2;
+    }
+
+);
+
+//Shift
+//let shiftX = arrFinal.shift();
+//let shiftX2 = arrFinal.shift();
+
+//Slice
+//let sliceX = arrFinal.slice(3, 7);
+
+//Sort
+//let sortX = arrFinal.sort();
+
+//Splice
+
+//let spliceX = arrFinal.splice(3, 3, 'Y', 'w', 0);
 console.log(arrFinal);
-console.log(reverseX);
+
+//Unshift
+//let unshiftX = arrFinal.unshift(-1, -2, -3);
+
+//ToString
+let toStringX = arrFinal.toString();
+console.log(arrFinal);
+console.log(toStringX);
