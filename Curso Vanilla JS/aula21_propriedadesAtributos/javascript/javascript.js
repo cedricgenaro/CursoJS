@@ -1,16 +1,13 @@
 (function readyJS(win, doc) {
     'use strict';
-    let btn = doc.querySelectorAll('.button');
     let body = doc.querySelector('body');
-    
+    body.style.backgroundColor = 'blue';
 
-    //Change body colors
-    function changeColors(event){
-        body.style.backgroundColor = event.target.dataset.color;
+    let image = doc.querySelector('#cruzeiro');
+    /* console.log(image.dataset.info);
+    console.log(image.attributes); */
+   /*  console.log(image.getAttribute('data-info')); */
+   console.log(image.setAttribute('data-color', 'pink'));
+   image.removeAttribute('id');
 
-    }
-    for(let i=0; i<btn.length; i++){
-         btn[i].addEventListener('click', changeColors, false);
-    }
-   
 })(window, document);
