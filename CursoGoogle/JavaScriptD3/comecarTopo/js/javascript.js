@@ -22,4 +22,8 @@ var chao = svg.append('rect').attr('width', window.innerWidth).attr('height', wi
 
 let bol = svg.append('circle').attr('r', 35).attr('cx', pickPosition(position) ).attr('cy', 35).attr('fill', 'red');
 
- 
+ bol.on('click', () => {
+    bol.interrupt();
+    bol.attr('cy', 35);
+    bol.transition().duration(2000).attr('cy', 190);
+ });
