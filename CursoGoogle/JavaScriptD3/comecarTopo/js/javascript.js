@@ -27,3 +27,5 @@ let bol = svg.append('circle').attr('r', 35).attr('cx', pickPosition(position) )
     bol.attr('cx', pickPosition(position));
     bol.transition().duration(2000).attr('cy', 190);
  });
+
+ 
