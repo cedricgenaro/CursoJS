@@ -25,7 +25,7 @@ let bol = svg.append('circle').attr('r', 35).attr('cx', pickPosition(position) )
  bol.on('click', () => {
     bol.interrupt().attr('cy', 35);
     bol.attr('cx', pickPosition(position));
-    bol.transition().duration(2000).attr('cy', 190);
+    bol.transition().duration(2000).attr('cy', 190).ease(d3.easeQuadIn).remove();
  });
 
  
